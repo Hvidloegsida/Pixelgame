@@ -1,0 +1,210 @@
+/** stjerne**/
+.faldstjerne {
+  animation-name: faldstjerne_kf;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes faldstjerne_kf {
+  0% {
+    translate: 0 -200%;
+  }
+  100% {
+    translate: 0 1600%;
+  }
+}
+
+.zoomoutstjerne {
+  animation-name: zoomoutstjerne_kf;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: initial;
+  animation-fill-mode: forwards;
+}
+
+@keyframes zoomoutstjerne_kf {
+  0% {
+    scale: 1;
+  }
+  70% {
+    scale: 0.8;
+  }
+  100% {
+    scale: 0;
+    rotate: 360deg;
+  }
+}
+
+/**meteor**/
+.faldmeteor {
+  animation-name: faldmeteor_kf;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes faldmeteor_kf {
+  0% {
+    translate: 0 -700%;
+    rotate: 360deg;
+  }
+  100% {
+    translate: 0 900%;
+    rotate: 360;
+  }
+}
+
+.pulsemeteor {
+  animation-name: pulsemeteor_kf;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: initial;
+  animation-fill-mode: forwards;
+}
+
+@keyframes pulsemeteor_kf {
+  0% {
+    scale: 1;
+  }
+  25% {
+    scale: 2;
+  }
+  40% {
+    scale: 1;
+  }
+  50% {
+    scale: 0.5;
+  }
+  65% {
+    scale: 2;
+    opacity: 1;
+  }
+  80% {
+    scale: 0;
+    opacity: 0;
+  }
+  100% {
+    scale: 0;
+    opacity: 0;
+  }
+}
+
+.frys {
+  animation-play-state: paused;
+}
+
+.timer {
+  animation-name: timer_kf;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+
+@keyframes timer_kf {
+  0% {
+    clip-path: inset(0 0 0);
+  }
+  100% {
+    clip-path: inset(0 100% 0 0);
+  }
+}
+
+.rumhop {
+  animation-name: rumhop_kf;
+  animation-direction: alternate;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes rumhop_kf {
+  0% {
+    translate: 0 0;
+  }
+  100% {
+    translate: 0 -10%;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.speechan_start {
+  animation-name: speechan_kf;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-fill-mode: backwards;
+  animation-iteration-count: 1;
+}
+
+@keyframes speechan_kf {
+  0% {
+    clip-path: inset(0 100% 0 0);
+  }
+  35% {
+    clip-path: inset(0 100% 0 0);
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.speechan_start2 {
+  animation-name: speechan2_kf;
+  animation-duration: 5.5s;
+  animation-timing-function: linear;
+  animation-fill-mode: backwards;
+  animation-iteration-count: 1;
+}
+
+@keyframes speechan2_kf {
+  0% {
+    clip-path: inset(0 100% 0 0);
+  }
+  55% {
+    clip-path: inset(0 100% 0 0);
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.speechan_start3 {
+  animation-name: speechan3_kf;
+  animation-duration: 7s;
+  animation-timing-function: linear;
+  animation-fill-mode: backwards;
+  animation-iteration-count: 1;
+}
+
+@keyframes speechan3_kf {
+  0% {
+    clip-path: inset(0 100% 0 0);
+  }
+  80% {
+    clip-path: inset(0 100% 0 0);
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.speechan_gameover {
+  animation-name: speechan_kf;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-fill-mode: backwards;
+  animation-iteration-count: 1;
+}
+
+@keyframes speechan_gameover_kf {
+  0% {
+    clip-path: inset(0 100% 0 0);
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
+  }
+}

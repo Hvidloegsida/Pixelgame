@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="animation.css">
+    <title>Rainbow mission</title>
+</head>
+
+<body>
+
+    <nav>
+        <h1>Spil</h1>
+        <ul class="menu">
+            <li>
+                <a href="index.html" class="menutekst1">Index</a>
+            </li>
+            <li>
+                <a href="assets.html" class="menutekst1">Assets</a>
+            </li>
+            <li>
+                <a href="grafik.html" class="menutekst1">Grafik</a>
+            </li>
+            <li>
+                <a href="spil.html" class="menutekst1">spil</a>
+            </li>
+            <li><a href="teknik.html" class="menutekst1">Teknik</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    <div id="screen">
+        <div id="game">
+            <div id="game_background">
+
+            </div>
+            <div id="game_elements">
+                <div id="staryellow_container" class="">
+                    <div id="staryellow_sprite"></div>
+                </div>
+                <div id="starblue_container" class="">
+                    <div id="starblue_sprite"></div>
+                </div>
+                <div id="stargreen_container" class="">
+                    <div id="stargreen_sprite"></div>
+                </div>
+                <div id="starorange_container" class="">
+                    <div id="starorange_sprite"></div>
+                </div>
+                <div id="starpink_container">
+                    <div id="starpink_sprite"></div>
+                </div>
+                <div id="starpurple_container" class="">
+                    <div id="starpurple_sprite"></div>
+                </div>
+                <div id="meteor_container" class="">
+                    <div id="meteor_sprite"></div>
+                </div>
+                <div id="meteor_container2" class="">
+                    <div id="meteor_sprite2"></div>
+                </div>
+                <div id="meteor_container3" class="">
+                    <div id="meteor_sprite3"></div>
+                </div>
+            </div>
+        </div>
+        <div id="game_foreground">
+        </div>
+        <div id="game_ui">
+            <div id="score_board">
+                <div id="point">0</div>
+            </div>
+            <div id="life_board">
+                <div id="life">3</div>
+            </div>
+            <div id="time_container">
+                <div id="time_frame" class="">
+
+                </div>
+                <div id="time_counter"></div>
+            </div>
+
+
+        </div>
+        <div id="start" class="">
+            <div id="start_knap" class=""></div>
+            <div id="logo"></div>
+            <div id="rummand" class=""></div>
+            <div id="speech" class="">
+                <div id="starttxt" class="start_txt">Hello fellow Starcollecter!
+                    Wanna help me out on my mission?
+                </div>
+                <div id="starttxt_2">Collect the stars in different colours but avoid the meteors at all cost! </div>
+                <div id="starttxt_3">We must collect more than
+                    7 stars!</div>
+            </div>
+        </div>
+        <div id="game_over" class="">
+            <div id="genstart_red" class=""></div>
+            <div id="game_over_logo" class=""></div>
+            <div id="rummand_game_over" class=""></div>
+            <div id="speech_game_over" class="">
+                <div id="game_over_txt" class="">Damn! We broke the starship by hitting too many meteors</div>
+            </div>
+        </div>
+        <div id="level_complete">
+            <div id="genstart_green" class=""></div>
+            <div id="mission_completed_logo" class=""></div>
+            <div id="rummand_mission_complete" class=""></div>
+            <div id="speech_mission_complete" class="">
+                <div id="mission_complete_txt" class="">Thank you so much for helping me collect the required stars. Now
+                    I can finally</div>
+                <div id="mission_complete_txt2"> return to earth after many lonely years in space.</div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="sound">
+        <audio src="lyde/undertale_fallen_85.mp3" id="sound_winner"></audio>
+        <audio src="lyde/undertale_sans_15.mp3" id="sound_gameover"></audio>
+        <audio src="lyde/undertale_chill_41.mp3" id="sound_background"></audio>
+        <audio src="lyde/import_klik_1.mp3" id="sound_click"></audio>
+        <audio src="lyde/meteor.mp3" id="sound_bang"></audio>
+        <audio src="lyde/sci_fi.wav" id="sound_knap"></audio>
+        <audio src="lyde/mix4sekny.mp3" id="sound_speech"></audio>
+        <audio src="lyde/mix2sek.mp3" id="sound_speech_gameover"></audio>
+    </div>
+
+    <script src="javascript.js"></script>
+    <script src="burger.js"></script>
+</body>
+
+</html>
